@@ -1,0 +1,26 @@
+.explore {
+    height: 2208px;
+    background-image: linear-gradient(192.53deg, rgba(0, 0, 0, 0.31) 29.671%, rgba(0, 0, 0, 0.29) 84.194%),
+        url(../../img/optimized/explore.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.explore-title {
+    color: rgb(1, 10, 32);
+    font-family: DM Sans;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 127px;
+}
+.swiper {
+    &.swiper2 {
+        width: 900px;
+        height: 100px;
+    }
+}
+
+.explore-image {
+    width: 200px;
+}

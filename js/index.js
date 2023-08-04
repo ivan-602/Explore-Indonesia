@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const swiper1 = new Swiper(".swiper1", {
   // Optional parameters
   direction: "vertical",
   slidesPerView: 1,
@@ -11,7 +11,7 @@ const swiper = new Swiper(".swiper", {
   },
 
   scrollbar: {
-    el: ".swiper-scrollbar",
+    el: ".swiper-scrollbar1",
   },
 });
 
@@ -19,10 +19,24 @@ const refs = {
   slideNumber: document.querySelector(".slide-number"),
 };
 
-swiper.on("slideChange", function () {
-  if (swiper.activeIndex + 1 >= 10) {
-    refs.slideNumber.textContent = swiper.activeIndex + 1;
+swiper1.on("slideChange", function () {
+  if (swiper1.activeIndex + 1 >= 10) {
+    refs.slideNumber.textContent = swiper1.activeIndex + 1;
     return;
   }
-  refs.slideNumber.textContent = `0${swiper.activeIndex + 1}`;
+  refs.slideNumber.textContent = `0${swiper1.activeIndex + 1}`;
+});
+// -----------------------------------------
+
+const swiper2 = new Swiper(".swiper2", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });

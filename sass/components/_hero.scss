@@ -1,6 +1,6 @@
 .hero-section {
   background-image: linear-gradient(192.53deg, rgba(0, 0, 0, 0.31) 29.671%, rgba(0, 0, 0, 0.29) 84.194%),
-    url(../img/hero.jpg);
+    url(../../img/optimized/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,12 +33,12 @@
   }
 }
 .swiper {
-  &.hero-action-swiper {
+  &.swiper1 {
     padding-left: 195px;
     width: 850px;
     height: 365px;
   }
-  &-scrollbar {
+  &-scrollbar1 {
     --swiper-scrollbar-border-radius: 10px;
     --swiper-scrollbar-top: auto;
     --swiper-scrollbar-bottom: 40px;

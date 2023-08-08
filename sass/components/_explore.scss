@@ -1,26 +1,177 @@
 .explore {
-    height: 2208px;
-    background-image: linear-gradient(192.53deg, rgba(0, 0, 0, 0.31) 29.671%, rgba(0, 0, 0, 0.29) 84.194%),
-        url(../../img/optimized/explore.jpg);
+    background-image: url(../../img/optimized/explore.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .explore-title {
-    color: rgb(1, 10, 32);
+    color: #010a20;
     font-family: DM Sans;
-    font-size: 50px;
+    margin-top: 30px;
+    font-size: 40px;
     font-weight: 700;
     text-align: center;
-    margin-top: 127px;
+    @media screen and (min-width: 1000px) {
+        margin-top: 127px;
+        font-size: 50px;
+    }
 }
+.slides-container {
+    height: 400px;
+    position: relative;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute !important;
+    top: 18% !important;
+    @media screen and (min-width: 420px) {
+        top: 25% !important;
+    }
+
+    &::after {
+        content: "" !important;
+    }
+}
+.swiper-button-prev {
+    @media screen and (min-width: 1400px) {
+        left: 10% !important;
+    }
+}
+.swiper-button-next {
+    @media screen and (min-width: 1400px) {
+        right: 10% !important;
+    }
+}
+.prev-icon {
+    transform: rotate(180deg);
+}
+.prev-icon,
+.next-icon {
+    fill: #020b20;
+    width: 15px !important;
+    height: 24px !important;
+}
+
 .swiper {
     &.swiper2 {
-        width: 900px;
-        height: 100px;
+        height: 300px;
+        margin-top: 47px;
+        @media screen and (min-width: 1200px) {
+            width: 1000px;
+        }
     }
+    &-pagination2 .swiper-pagination-bullet {
+        background-color: #85a3b2;
+        width: 19px;
+        height: 19px;
+        margin: 0 8px !important;
+    }
+    &-pagination2 .swiper-pagination-bullet-active {
+        background-color: $accent-color;
+        width: 50px;
+        height: 19px;
+        border-radius: 60px;
+    }
+}
+.explore-swiper-slide {
+    display: flex !important;
+    justify-content: center !important;
 }
 
 .explore-image {
-    width: 200px;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    @media screen and (min-width: 420px) {
+        width: 300px;
+        height: 200px;
+    }
+}
+// --!numbers-------
+.explore-numbers {
+    margin-top: 780px;
+    background-color: #020c21;
+    opacity: 0.9;
+    @media screen and (min-width: 1000px) {
+        margin-top: 780px;
+    }
+
+    &-title {
+        margin-top: 70px;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 46px;
+        letter-spacing: 0%;
+        text-align: center;
+        @media screen and (min-width: 1000px) {
+            margin-top: 190px;
+            font-size: 60px;
+            line-height: 150%;
+        }
+    }
+    &-text {
+        width: 314px;
+        margin: 0 auto;
+        margin-top: 57px;
+        color: #e0e0e0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        @media screen and (min-width: 1000px) {
+            width: 484px;
+            margin-top: 37px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    &__list {
+        margin-top: 69px;
+        margin-bottom: 69px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 50px;
+        @media screen and (min-width: 1000px) {
+            margin-top: 49px;
+            margin-bottom: 190px;
+            flex-direction: row;
+            column-gap: 100px;
+        }
+    }
+    &__item {
+        width: 314px;
+        text-align: center;
+        @media screen and (min-width: 1000px) {
+            width: 350px;
+        }
+    }
+    &__title {
+        color: $accent-color;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 46px;
+        letter-spacing: 0%;
+        @media screen and (min-width: 1000px) {
+            font-size: 42.14px;
+            line-height: 49.16px;
+            letter-spacing: 0.39px;
+        }
+    }
+    &__descr {
+        margin-top: 10px;
+        color: #e0e0e0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        @media screen and (min-width: 1000px) {
+            margin-top: 19px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
 }

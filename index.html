@@ -43,7 +43,7 @@
               </div>
               <ul class="page-header__nav-buttons">
                 <li class="page-header__nav-button-item">
-                  <form class="search-form" action="">
+                  <form class="search-form">
                     <input
                       class="search-input"
                       type="search"
@@ -137,11 +137,11 @@
                       height="295"
                       class="hero-partition-overlay-miniature"
                     />
-                    <button class="hero-play-button">
+                    <div class="hero-play-button">
                       <svg class="hero-play-icon">
                         <use href="./img/icons.svg#icon-play"></use>
                       </svg>
-                    </button>
+                    </div>
                   </div>
                 </a>
               </li>
@@ -163,11 +163,11 @@
                       height="295"
                       class="hero-partition-overlay-miniature"
                     />
-                    <button class="hero-play-button">
+                    <div class="hero-play-button">
                       <svg class="hero-play-icon">
                         <use href="./img/icons.svg#icon-play"></use>
                       </svg>
-                    </button>
+                    </div>
                   </div>
                 </a>
               </li>
@@ -189,11 +189,11 @@
                       height="295"
                       class="hero-partition-overlay-miniature"
                     />
-                    <button class="hero-play-button">
+                    <div class="hero-play-button">
                       <svg class="hero-play-icon">
                         <use href="./img/icons.svg#icon-play"></use>
                       </svg>
-                    </button>
+                    </div>
                   </div>
                 </a>
               </li>
@@ -211,11 +211,11 @@
                       height="295"
                       class="hero-partition-overlay-miniature"
                     />
-                    <button class="hero-play-button">
+                    <div class="hero-play-button">
                       <svg class="hero-play-icon">
                         <use href="./img/icons.svg#icon-play"></use>
                       </svg>
-                    </button>
+                    </div>
                   </div>
                 </a>
               </li>
@@ -274,71 +274,101 @@
         <div class="container">
           <h2 class="explore-title">Explore Our Secrets</h2>
           <!-- Slider here -->
-          <div class="swiper swiper2">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img
-                  src="./img/optimized/explore1.jpg"
-                  alt="house on the shore"
-                  class="explore-image"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="./img/optimized/explore2.jpg"
-                  alt="tropical field"
-                  class="explore-image"
-                />
-              </div>
-              <div class="swiper-slide">
-                <img
-                  src="./img/optimized/explore3.jpg"
-                  alt="playing children"
-                  class="explore-image"
-                />
-              </div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
+          <div class="slides-container">
+            <div class="swiper-button-next">
+              <svg class="next-icon">
+                <use href="./img/icons.svg#icon-navigation"></use>
+              </svg>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination swiper-pagination2"></div>
+            <div class="swiper-button-prev">
+              <svg class="prev-icon">
+                <use href="./img/icons.svg#icon-navigation"></use>
+              </svg>
+            </div>
+            <div class="swiper swiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide explore-swiper-slide">
+                  <img
+                    src="./img/optimized/explore1.jpg"
+                    alt="house on the shore"
+                    class="explore-image"
+                  />
+                </div>
+                <div class="swiper-slide explore-swiper-slide">
+                  <img
+                    src="./img/optimized/explore2.jpg"
+                    alt="tropical field"
+                    class="explore-image"
+                  />
+                </div>
+                <div class="swiper-slide explore-swiper-slide">
+                  <img
+                    src="./img/optimized/explore3.jpg"
+                    alt="playing children"
+                    class="explore-image"
+                  />
+                </div>
+                <div class="swiper-slide explore-swiper-slide">
+                  <img
+                    src="./img/optimized/explore1.jpg"
+                    alt="house on the shore"
+                    class="explore-image"
+                  />
+                </div>
+                <div class="swiper-slide explore-swiper-slide">
+                  <img
+                    src="./img/optimized/explore2.jpg"
+                    alt="tropical field"
+                    class="explore-image"
+                  />
+                </div>
+                <div class="swiper-slide explore-swiper-slide">
+                  <img
+                    src="./img/optimized/explore3.jpg"
+                    alt="playing children"
+                    class="explore-image"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination swiper-pagination2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="explore-numbers">
+          <div class="container">
+            <h2 class="explore-numbers-title">By The Numbers</h2>
+            <p class="explore-numbers-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              commodo magna et libero.Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit.
+            </p>
+            <ul class="explore-numbers__list">
+              <li class="explore-numbers__item">
+                <h3 class="explore-numbers__title">100+</h3>
+                <p class="explore-numbers__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  commodo magna et libero.
+                </p>
+              </li>
+              <li class="explore-numbers__item">
+                <h3 class="explore-numbers__title">43,000+</h3>
+                <p class="explore-numbers__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  commodo.
+                </p>
+              </li>
+              <li class="explore-numbers__item">
+                <h3 class="explore-numbers__title">30+</h3>
+                <p class="explore-numbers__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                  commodo magna et libero.
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-      <section class="numbers">
-        <div class="container">
-          <h2 class="section-title">By The Numbers</h2>
-          <p class="numbers-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            commodo magna et libero.Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.
-          </p>
-          <ul class="numbers__list">
-            <li class="numbers__item">
-              <h3 class="numbers__title">100+</h3>
-              <p class="numbers__descr">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                commodo magna et libero.
-              </p>
-            </li>
-            <li class="numbers__item">
-              <h3 class="numbers__title">43,000+</h3>
-              <p class="numbers__descr">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                commodo.
-              </p>
-            </li>
-            <li class="numbers__item">
-              <h3 class="numbers__title">30+</h3>
-              <p class="numbers__descr">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                commodo magna et libero.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
+
       <section class="map">
         <div class="container">
           <h2 class="section-title">

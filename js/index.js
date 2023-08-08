@@ -29,14 +29,20 @@ swiper1.on("slideChange", function () {
 // -----------------------------------------
 
 const swiper2 = new Swiper(".swiper2", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 30,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination2",
     clickable: true,
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
   },
 });

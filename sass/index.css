@@ -182,7 +182,7 @@ a {
 }
 
 .hero-section {
-  background-image: linear-gradient(192.53deg, rgba(0, 0, 0, 0.31) 29.671%, rgba(0, 0, 0, 0.29) 84.194%), url(../../img/optimized/hero.jpg);
+  background-image: linear-gradient(192.53deg, rgba(0, 0, 0, 0.31) 29.671%, rgba(0, 0, 0, 0.29) 84.194%), url(../img/optimized/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -550,7 +550,7 @@ a {
 }
 
 .articles__first-item {
-  background-image: linear-gradient(180deg, rgb(1, 10, 32), rgba(1, 10, 32, 0.85) 100%), url("../../img/optimized/path.jpg");
+  background-image: linear-gradient(180deg, rgb(1, 10, 32), rgba(1, 10, 32, 0.85) 100%), url("../img/optimized/path.jpg");
 }
 
 .article {
@@ -572,7 +572,7 @@ a {
 }
 
 .articles__second-item {
-  background-image: linear-gradient(180deg, rgb(1, 10, 32), rgba(1, 10, 32, 0.85) 100%), url("../../img/optimized/beach.jpg");
+  background-image: linear-gradient(180deg, rgb(1, 10, 32), rgba(1, 10, 32, 0.85) 100%), url("../img/optimized/beach.jpg");
 }
 @media screen and (min-width: 1000px) {
   .articles__second-item .article {
@@ -657,7 +657,7 @@ a {
 }
 
 .explore {
-  background-image: url(../../img/optimized/explore.jpg);
+  background-image: url(../img/optimized/explore.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

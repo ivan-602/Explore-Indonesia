@@ -6,7 +6,7 @@
 
 .articles__first-item {
   background-image: linear-gradient(180deg, rgb(1, 10, 32), rgba(1, 10, 32, 0.85) 100%),
-    url("../../img/optimized/path.jpg");
+    url("../img/optimized/path.jpg");
 }
 .article {
   display: flex;
@@ -26,7 +26,7 @@
 
 .articles__second-item {
   background-image: linear-gradient(180deg, rgb(1, 10, 32), rgba(1, 10, 32, 0.85) 100%),
-    url("../../img/optimized/beach.jpg");
+    url("../img/optimized/beach.jpg");
 
   & .article {
     @media screen and (min-width: 1000px) {

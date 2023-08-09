@@ -891,6 +891,7 @@ a {
     height: 1700.11px;
     bottom: -7%;
     right: 70%;
+    transform: rotate(0deg);
   }
 }
 .map__image--two {
@@ -969,9 +970,9 @@ a {
   .map__link {
     width: 210px;
     height: 64px;
-    padding-top: 16px;
     margin-top: 36px;
     margin-bottom: 257px;
+    padding-top: 22px;
   }
 }
 .map__link:hover, .map__link:focus {

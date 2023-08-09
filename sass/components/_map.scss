@@ -19,6 +19,7 @@
 
             bottom: -7%;
             right: 70%;
+            transform: rotate(0deg);
         }
     }
     &--two {
@@ -92,9 +93,9 @@
     @media screen and (min-width: 1000px) {
         width: 210px;
         height: 64px;
-        padding-top: 16px;
         margin-top: 36px;
         margin-bottom: 257px;
+        padding-top: 22px;
     }
     &:hover,
     &:focus {

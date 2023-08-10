@@ -171,6 +171,7 @@
     counter-increment: my-awesome-counter;
     max-width: 290px;
     &:hover.hero-partitions-item::before,
+    &:active.hero-partitions-item::before,
     &:focus.hero-partitions-item::before {
       opacity: 0;
     }
@@ -178,6 +179,7 @@
     @media screen and (min-width: 1400px) {
       width: 290px;
       &:hover,
+      &:active,
       &:focus {
         overflow: visible;
       }
@@ -206,13 +208,16 @@
     padding-left: 70px;
 
     &:hover .hero-partition-overlay,
+    &:active .hero-partition-overlay,
     &:focus .hero-partition-overlay {
       transform: translateY(0);
       box-shadow: 0 0 10px #00000051;
     }
     &:hover .hero-partition-title,
+    &:active .hero-partition-title,
     &:focus .hero-partition-title,
     &:hover .hero-partition-description,
+    &:active .hero-partition-description,
     &:focus .hero-partition-description {
       opacity: 0%;
     }

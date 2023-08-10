@@ -55,6 +55,10 @@
     fill: $accent-color;
   }
 }
+.search-icon:hover,
+.search-icon:active {
+  fill: $accent-color;
+}
 
 .page-header__nav-button-item:not(:last-child) {
   margin-right: 10px;
@@ -74,6 +78,7 @@
 .search-form {
   display: flex;
   &:hover,
+  &:active,
   &:focus {
     & > .search-input {
       opacity: 1;

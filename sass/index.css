@@ -356,6 +356,19 @@ a {
     margin-left: 210px;
   }
 }
+@media screen and (min-width: 1400px) {
+  .hero-partitions--mobile {
+    display: none;
+  }
+}
+.hero-partitions--desktop {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  .hero-partitions--desktop {
+    display: flex;
+  }
+}
 .hero-partitions-item {
   overflow: hidden;
   counter-increment: my-awesome-counter;

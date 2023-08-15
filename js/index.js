@@ -1,5 +1,29 @@
+// !--------------mobile menu------------------
+(() => {
+  const menuBtnOpen = document.querySelector("[data-menu-open]");
+  const menuBtnClose = document.querySelector("[data-menu-close]");
+  const mobileMenuRef = document.querySelector("[data-menu]");
+
+  const body = document.querySelector("body");
+
+  menuBtnOpen.addEventListener("click", openMenu);
+  menuBtnClose.addEventListener("click", openMenu);
+
+  function openMenu() {
+    const expanded =
+      menuBtnOpen.getAttribute("aria-expanded") === "true" || false;
+    menuBtnOpen.setAttribute("aria-expanded", !expanded);
+
+    // open|closure of the mob menu
+    mobileMenuRef.classList.toggle("is-open");
+
+    // body scroll lock
+    body.classList.toggle("no-scroll");
+  }
+})();
+
+//! ------------------hero swiper--------------
 const swiper1 = new Swiper(".swiper1", {
-  // Optional parameters
   direction: "vertical",
   slidesPerView: 1,
   parallax: true,
@@ -26,7 +50,7 @@ swiper1.on("slideChange", function () {
   }
   refs.slideNumber.textContent = `0${swiper1.activeIndex + 1}`;
 });
-// -----------------------------------------
+//! ------------------explore swiper-----------------------
 
 const swiper2 = new Swiper(".swiper2", {
   slidesPerView: 1,

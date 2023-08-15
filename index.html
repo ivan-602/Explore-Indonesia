@@ -56,14 +56,92 @@
                     </button>
                   </form>
                 </li>
-                <li class="page-header__nav-button-item">
-                  <button class="menu-button">
+                <li class="page-header__nav-button-item page-header__menu">
+                  <button
+                    class="menu-button"
+                    data-menu-open
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="menu-container"
+                  >
                     <svg class="menu-icon">
                       <use href="./img/icons.svg#icon-menu"></use>
                     </svg>
                   </button>
+
+                  <ul class="menu--desktop">
+                    <li class="menu__item--desktop">
+                      <a href="#" class="menu__link--desktop">about</a>
+                    </li>
+                    <li class="menu__item--desktop">
+                      <a href="#" class="menu__link--desktop">pricing</a>
+                    </li>
+                    <li class="menu__item--desktop">
+                      <a href="#" class="menu__link--desktop">company</a>
+                    </li>
+                    <li class="menu__item--desktop">
+                      <a href="#" class="menu__link--desktop">blog</a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
+
+              <div data-menu class="menu-container" id="menu-container">
+                <button
+                  data-menu-close
+                  class="menu-button menu-button--close"
+                  type="button"
+                  aria-controls="menu-container"
+                >
+                  <svg width="24" height="16" aria-label="Mobile menu switcher">
+                    <use
+                      href="./img/icons.svg#icon-close_24px"
+                      class="menu-button__colse-icon"
+                    ></use>
+                  </svg>
+                </button>
+                <ul class="menu--mobile">
+                  <li class="menu__item--mobile">
+                    <a href="#" class="menu__link--mobile">about</a>
+                  </li>
+                  <li class="menu__item--mobile">
+                    <a href="#" class="menu__link--mobile">pricing</a>
+                  </li>
+                  <li class="menu__item--mobile">
+                    <a href="#" class="menu__link--mobile">company</a>
+                  </li>
+                  <li class="menu__item--mobile">
+                    <a href="#" class="menu__link--mobile">blog</a>
+                  </li>
+                </ul>
+
+                <div class="menu-bottom-container">
+                  <ul class="menu-bottom__links-list">
+                    <li class="menu-bottom__links-item">
+                      <a href="#" class="menu-bottom__links-link">
+                        <svg class="menu-bottom-icon">
+                          <use href="./img/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu-bottom__links-item">
+                      <a href="#" class="menu-bottom__links-link">
+                        <svg class="menu-bottom-icon">
+                          <use href="./img/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="menu-bottom__links-item">
+                      <a href="#" class="menu-bottom__links-link">
+                        <svg class="menu-bottom-icon">
+                          <use href="./img/icons.svg#icon-google"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                  <span class="menu-bottom-copyrihgt">Copyright © 2019</span>
+                </div>
+              </div>
             </nav>
           </header>
           <div class="hero-action-mobile">
@@ -122,7 +200,7 @@
                   </p>
                   <div class="hero-partition-overlay">
                     <img
-                      src="https://shorturl.at/FHWX6"
+                      src="./img/optimized/hero-overflow.jpg"
                       alt="beach"
                       width="290"
                       height="295"
@@ -148,7 +226,33 @@
                   </p>
                   <div class="hero-partition-overlay">
                     <img
-                      src="https://shorturl.at/FHWX6"
+                      src="./img/optimized/hero-overflow.jpg"
+                      alt="beach"
+                      width="290"
+                      height="295"
+                      class="hero-partition-overlay-miniature"
+                    />
+                    <a
+                      href="https://youtu.be/vYJ7dH1gIB0"
+                      target="_blank"
+                      class="hero-play-button"
+                    >
+                      <svg class="hero-play-icon">
+                        <use href="./img/icons.svg#icon-play"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="hero-partitions-item">
+                <div class="hero-partition-link">
+                  <h3 class="hero-partition-title">Title here</h3>
+                  <p class="hero-partition-description">
+                    Lorem ipsum dolor sit amet et amet ist ame.
+                  </p>
+                  <div class="hero-partition-overlay">
+                    <img
+                      src="./img/optimized/hero-overflow.jpg"
                       alt="beach"
                       width="290"
                       height="295"
@@ -174,40 +278,14 @@
                   </p>
                   <div class="hero-partition-overlay">
                     <img
-                      src="https://shorturl.at/FHWX6"
+                      src="./img/optimized/hero-overflow.jpg"
                       alt="beach"
                       width="290"
                       height="295"
                       class="hero-partition-overlay-miniature"
                     />
                     <a
-                      href="https://youtu.be/xvFZjo5PgG0"
-                      target="_blank"
-                      class="hero-play-button"
-                    >
-                      <svg class="hero-play-icon">
-                        <use href="./img/icons.svg#icon-play"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </li>
-              <li class="hero-partitions-item">
-                <div class="hero-partition-link">
-                  <h3 class="hero-partition-title">Title here</h3>
-                  <p class="hero-partition-description">
-                    Lorem ipsum dolor sit amet et amet ist ame.
-                  </p>
-                  <div class="hero-partition-overlay">
-                    <img
-                      src="https://shorturl.at/FHWX6"
-                      alt="beach"
-                      width="290"
-                      height="295"
-                      class="hero-partition-overlay-miniature"
-                    />
-                    <a
-                      href="https://youtu.be/xvFZjo5PgG0"
+                      href="https://youtu.be/vYJ7dH1gIB0"
                       target="_blank"
                       class="hero-play-button"
                     >
@@ -233,7 +311,7 @@
                   </p>
                   <div class="hero-partition-overlay">
                     <img
-                      src="https://shorturl.at/FHWX6"
+                      src="./img/optimized/hero-overflow.jpg"
                       alt="beach"
                       width="290"
                       height="295"
@@ -259,7 +337,7 @@
                   </p>
                   <div class="hero-partition-overlay">
                     <img
-                      src="https://shorturl.at/FHWX6"
+                      src="./img/optimized/hero-overflow.jpg"
                       alt="beach"
                       width="290"
                       height="295"
@@ -285,7 +363,7 @@
                   </p>
                   <div class="hero-partition-overlay">
                     <img
-                      src="https://shorturl.at/FHWX6"
+                      src="./img/optimized/hero-overflow.jpg"
                       alt="beach"
                       width="290"
                       height="295"
@@ -300,14 +378,18 @@
                 </a>
               </li>
               <li class="hero-partitions-item">
-                <a href="#" class="hero-partition-link">
+                <a
+                  href="https://youtu.be/vYJ7dH1gIB0"
+                  target="_blank"
+                  class="hero-partition-link"
+                >
                   <h3 class="hero-partition-title">Title here</h3>
                   <p class="hero-partition-description">
                     Lorem ipsum dolor sit amet et amet ist ame.
                   </p>
                   <div class="hero-partition-overlay">
                     <img
-                      src="https://shorturl.at/FHWX6"
+                      src="./img/optimized/hero-overflow.jpg"
                       alt="beach"
                       width="290"
                       height="295"
@@ -474,12 +556,12 @@
       <section class="map">
         <img
           class="map__image map__image--one"
-          src="./img/map.png"
+          src="./img/Whangaehu.svg"
           alt="background stripes"
         />
         <img
           class="map__image map__image--two"
-          src="./img/map.png"
+          src="./img/Whangaehu.svg"
           alt="background stripes"
         />
         <div class="container">
@@ -496,7 +578,7 @@
       </section>
       <section class="video">
         <div class="container">
-          <h2 class="section-title">
+          <h2 class="video__title">
             Live a life like you wouldn’t imagine, experience a life you
             wouldn’t expect.
           </h2>

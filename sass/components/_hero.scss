@@ -190,11 +190,7 @@
 
     @media screen and (min-width: 1400px) {
       width: 290px;
-      &:hover,
-      &:active,
-      &:focus {
-        overflow: visible;
-      }
+      overflow: visible;
     }
     &::before {
       content: "0" counter(my-awesome-counter);

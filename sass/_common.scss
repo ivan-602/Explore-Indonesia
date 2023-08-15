@@ -4,8 +4,12 @@
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   color: $primary-title-color;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 a {
   color: $primary-title-color;

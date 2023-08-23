@@ -1,0 +1,174 @@
+.video {
+    background-image: linear-gradient(192.53deg, rgba(1, 10, 32, 0.582) 70%, rgba(1, 10, 32, 0.582) 84.194%),
+        url(../img/optimized/video-palms.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.video__title {
+    margin-top: 83px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0px;
+    text-align: center;
+    @media screen and (min-width: 1000px) {
+        margin: 0 auto;
+        margin-top: 140px;
+        width: 1056px;
+        font-size: 42px;
+        line-height: 50px;
+    }
+}
+.video__player {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+
+    &-miniature {
+        width: 314px;
+        height: 192px;
+        object-fit: cover;
+        border-radius: 10px;
+        @media screen and (min-width: 1000px) {
+            width: 1056px;
+            height: 594px;
+        }
+    }
+    &-button {
+        position: absolute;
+        width: 67px;
+        height: 67px;
+
+        background-color: #e93a7d;
+        border-radius: 50%;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover .video__player-icon,
+        &:active .video__player-icon {
+            transform: scale(1.15);
+            @media screen and (min-width: 1000px) {
+                transform: scale(1.5);
+            }
+        }
+        @media screen and (min-width: 1000px) {
+            width: 86px;
+            height: 86px;
+        }
+    }
+    &-icon {
+        width: 16px;
+        height: 16px;
+        fill: $primary-title-color;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &-frameplayer {
+        width: 314px;
+        height: 192px;
+        border-radius: 10px;
+        @media screen and (min-width: 1000px) {
+            width: 1056px;
+            height: 594px;
+        }
+    }
+}
+.video__miniatures {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 35px;
+    @media screen and (min-width: 1000px) {
+        margin-top: 125px;
+        margin-bottom: 245px;
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: 75px;
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width: 1000px) {
+            flex-direction: row;
+            column-gap: 41px;
+        }
+    }
+
+    &-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            transform: scale(1.03);
+            @media screen and (min-width: 1000px) {
+                transform: scale(1.1);
+            }
+        }
+    }
+    &-image {
+        position: relative;
+        width: 314px;
+        height: 176px;
+        object-fit: cover;
+        border-radius: 10px;
+        @media screen and (min-width: 1000px) {
+            width: 233px;
+            height: 151px;
+        }
+    }
+    &-icon {
+        position: absolute;
+        width: 16px;
+        height: 18px;
+        fill: $primary-title-color;
+        pointer-events: none;
+        @media screen and (min-width: 1000px) {
+            width: 21px;
+            height: 27px;
+        }
+    }
+    &-description {
+        margin-top: 32px;
+        width: 330px;
+        @media screen and (min-width: 1000px) {
+            margin-top: 5px;
+            width: 350px;
+        }
+    }
+    &-title {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 150%;
+        letter-spacing: 0%;
+        text-align: center;
+
+        @media screen and (min-width: 1000px) {
+            font-size: 18px;
+            text-align: left;
+        }
+    }
+    &-text {
+        margin-top: 20px;
+        color: rgba(255, 255, 255, 0.626);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        text-align: center;
+
+        @media screen and (min-width: 1000px) {
+            margin-top: 15px;
+            font-size: 18px;
+            line-height: 28px;
+            text-align: left;
+        }
+    }
+}

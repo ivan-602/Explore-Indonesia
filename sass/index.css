@@ -149,6 +149,10 @@ a {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 .logo {
   display: inline-flex;
   font-family: "Roboto";
@@ -577,7 +581,7 @@ a {
   display: none;
   position: absolute;
   right: 0%;
-  top: 120%;
+  top: 95%;
   opacity: 1;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1117,4 +1121,201 @@ a {
 }
 .map__link:hover, .map__link:focus {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3764705882);
+}
+
+.video {
+  background-image: linear-gradient(192.53deg, rgba(1, 10, 32, 0.582) 70%, rgba(1, 10, 32, 0.582) 84.194%), url(../img/optimized/video-palms.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.video__title {
+  margin-top: 83px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  .video__title {
+    margin: 0 auto;
+    margin-top: 140px;
+    width: 1056px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+
+.video__player {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.video__player-miniature {
+  width: 314px;
+  height: 192px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+@media screen and (min-width: 1000px) {
+  .video__player-miniature {
+    width: 1056px;
+    height: 594px;
+  }
+}
+.video__player-button {
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  background-color: #e93a7d;
+  border-radius: 50%;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.video__player-button:hover .video__player-icon, .video__player-button:active .video__player-icon {
+  transform: scale(1.15);
+}
+@media screen and (min-width: 1000px) {
+  .video__player-button:hover .video__player-icon, .video__player-button:active .video__player-icon {
+    transform: scale(1.5);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .video__player-button {
+    width: 86px;
+    height: 86px;
+  }
+}
+.video__player-icon {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.video__player-frameplayer {
+  width: 314px;
+  height: 192px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 1000px) {
+  .video__player-frameplayer {
+    width: 1056px;
+    height: 594px;
+  }
+}
+
+.video__miniatures {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 35px;
+}
+@media screen and (min-width: 1000px) {
+  .video__miniatures {
+    margin-top: 125px;
+    margin-bottom: 245px;
+    flex-direction: row;
+    row-gap: 0;
+    -moz-column-gap: 75px;
+         column-gap: 75px;
+  }
+}
+.video__miniatures-item {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  .video__miniatures-item {
+    flex-direction: row;
+    -moz-column-gap: 41px;
+         column-gap: 41px;
+  }
+}
+.video__miniatures-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.video__miniatures-card:hover {
+  transform: scale(1.03);
+}
+@media screen and (min-width: 1000px) {
+  .video__miniatures-card:hover {
+    transform: scale(1.1);
+  }
+}
+.video__miniatures-image {
+  position: relative;
+  width: 314px;
+  height: 176px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+@media screen and (min-width: 1000px) {
+  .video__miniatures-image {
+    width: 233px;
+    height: 151px;
+  }
+}
+.video__miniatures-icon {
+  position: absolute;
+  width: 16px;
+  height: 18px;
+  fill: #fff;
+  pointer-events: none;
+}
+@media screen and (min-width: 1000px) {
+  .video__miniatures-icon {
+    width: 21px;
+    height: 27px;
+  }
+}
+.video__miniatures-description {
+  margin-top: 32px;
+  width: 330px;
+}
+@media screen and (min-width: 1000px) {
+  .video__miniatures-description {
+    margin-top: 5px;
+    width: 350px;
+  }
+}
+.video__miniatures-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  .video__miniatures-title {
+    font-size: 18px;
+    text-align: left;
+  }
+}
+.video__miniatures-text {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.626);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+@media screen and (min-width: 1000px) {
+  .video__miniatures-text {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+  }
 }/*# sourceMappingURL=index.css.map */

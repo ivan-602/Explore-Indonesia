@@ -141,6 +141,6 @@ function swapDataFromMiniature(event, player) {
 }
 
 // !----------------------photo gallery---------------------------
-var lightbox = new SimpleLightbox(".gallery a", {
+const lightbox = new SimpleLightbox(".gallery a", {
   /* options */
 });

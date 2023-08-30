@@ -139,3 +139,8 @@ function swapDataFromMiniature(event, player) {
   event.target.parentNode.parentNode.children[1].children[1].textContent =
     tempData.text;
 }
+
+// !----------------------photo gallery---------------------------
+var lightbox = new SimpleLightbox(".gallery a", {
+  /* options */
+});

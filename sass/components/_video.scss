@@ -59,6 +59,11 @@
         }
     }
     &-icon {
+        position: absolute;
+        left: 50%;
+        margin-left: -8px;
+        top: 50%;
+        margin-top: -8px;
         width: 16px;
         height: 16px;
         fill: $primary-title-color;
@@ -156,6 +161,7 @@
         }
     }
     &-text {
+        height: 72px;
         margin-top: 20px;
         color: rgba(255, 255, 255, 0.626);
         font-size: 16px;
@@ -165,6 +171,7 @@
         text-align: center;
 
         @media screen and (min-width: 1000px) {
+            height: fit-content;
             margin-top: 15px;
             font-size: 18px;
             line-height: 28px;

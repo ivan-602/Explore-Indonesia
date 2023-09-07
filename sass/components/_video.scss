@@ -6,14 +6,18 @@
     background-position: center;
 }
 .video__title {
+    margin: 0 auto;
     margin-top: 83px;
     font-size: 40px;
     font-weight: 700;
     line-height: 46px;
     letter-spacing: 0px;
     text-align: center;
-    @media screen and (min-width: 1000px) {
-        margin: 0 auto;
+    @media screen and (min-width: 768px) {
+        width: 700px;
+    }
+
+    @media screen and (min-width: 1200px) {
         margin-top: 140px;
         width: 1056px;
         font-size: 42px;
@@ -32,7 +36,8 @@
         height: 192px;
         object-fit: cover;
         border-radius: 10px;
-        @media screen and (min-width: 1000px) {
+
+        @media screen and (min-width: 1200px) {
             width: 1056px;
             height: 594px;
         }
@@ -49,11 +54,11 @@
         &:hover .video__player-icon,
         &:active .video__player-icon {
             transform: scale(1.15);
-            @media screen and (min-width: 1000px) {
+            @media screen and (min-width: 1200px) {
                 transform: scale(1.5);
             }
         }
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1200px) {
             width: 86px;
             height: 86px;
         }
@@ -73,7 +78,7 @@
         width: 314px;
         height: 192px;
         border-radius: 10px;
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1200px) {
             width: 1056px;
             height: 594px;
         }
@@ -86,19 +91,22 @@
     justify-content: center;
     flex-direction: column;
     row-gap: 35px;
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1200px) {
         margin-top: 125px;
         margin-bottom: 245px;
         flex-direction: row;
-        row-gap: 0;
+        justify-content: space-around;
+    }
+    @media screen and (min-width: 1350px) {
         column-gap: 75px;
+        justify-content: center;
     }
 
     &-item {
         display: flex;
         flex-direction: column;
 
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1350px) {
             flex-direction: row;
             column-gap: 41px;
         }
@@ -108,15 +116,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        cursor: pointer;
-        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover {
-            transform: scale(1.03);
-            @media screen and (min-width: 1000px) {
-                transform: scale(1.1);
-            }
-        }
     }
     &-image {
         position: relative;
@@ -124,9 +123,19 @@
         height: 176px;
         object-fit: cover;
         border-radius: 10px;
-        @media screen and (min-width: 1000px) {
+        cursor: pointer;
+        transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width: 1350px) {
             width: 233px;
             height: 151px;
+        }
+
+        &:hover {
+            transform: scale(1.03);
+            @media screen and (min-width: 1350px) {
+                transform: scale(1.1);
+            }
         }
     }
     &-icon {
@@ -135,15 +144,16 @@
         height: 18px;
         fill: $primary-title-color;
         pointer-events: none;
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1350px) {
             width: 21px;
             height: 27px;
         }
     }
     &-description {
+        margin: 0 auto;
         margin-top: 32px;
         width: 330px;
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1350px) {
             margin-top: 5px;
             width: 350px;
         }
@@ -155,7 +165,7 @@
         letter-spacing: 0%;
         text-align: center;
 
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1350px) {
             font-size: 18px;
             text-align: left;
         }
@@ -170,7 +180,7 @@
         letter-spacing: 0.5px;
         text-align: center;
 
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1350px) {
             height: fit-content;
             margin-top: 15px;
             font-size: 18px;

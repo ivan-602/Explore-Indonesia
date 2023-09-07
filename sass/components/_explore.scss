@@ -11,7 +11,7 @@
     font-size: 40px;
     font-weight: 700;
     text-align: center;
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1200px) {
         margin-top: 127px;
         font-size: 50px;
     }
@@ -23,10 +23,14 @@
 
 .swiper-button-next,
 .swiper-button-prev {
+    display: none !important;
     position: absolute !important;
     top: 18% !important;
     @media screen and (min-width: 420px) {
         top: 25% !important;
+    }
+    @media screen and (min-width: 1200px) {
+        display: block !important;
     }
 
     &::after {
@@ -100,7 +104,7 @@
     margin-top: 780px;
     background-color: #020c21;
     opacity: 0.9;
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1200px) {
         margin-top: 780px;
     }
 
@@ -111,7 +115,7 @@
         line-height: 46px;
         letter-spacing: 0%;
         text-align: center;
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1200px) {
             margin-top: 190px;
             font-size: 60px;
             line-height: 150%;
@@ -127,7 +131,7 @@
         line-height: 24px;
         letter-spacing: 0.5px;
         text-align: center;
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1200px) {
             width: 484px;
             margin-top: 37px;
             font-size: 18px;
@@ -142,7 +146,7 @@
         justify-content: center;
         align-items: center;
         row-gap: 50px;
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1200px) {
             margin-top: 49px;
             margin-bottom: 190px;
             flex-direction: row;
@@ -152,7 +156,7 @@
     &__item {
         width: 314px;
         text-align: center;
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1200px) {
             width: 350px;
         }
     }
@@ -162,7 +166,7 @@
         font-weight: 700;
         line-height: 46px;
         letter-spacing: 0%;
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1200px) {
             font-size: 42.14px;
             line-height: 49.16px;
             letter-spacing: 0.39px;
@@ -175,7 +179,7 @@
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0.5px;
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1200px) {
             margin-top: 19px;
             font-size: 18px;
             line-height: 28px;

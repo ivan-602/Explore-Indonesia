@@ -8,7 +8,7 @@
         color: #010a20;
         text-align: center;
 
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1200px) {
             margin-top: 177px;
             font-size: 60px;
             line-height: 150%;
@@ -90,6 +90,9 @@
             order: 1;
         }
     }
+}
+.photo-gallery__item {
+    border-radius: 10px;
 }
 
 .photo-gallery__miniature {

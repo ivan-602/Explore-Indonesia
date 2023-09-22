@@ -144,3 +144,20 @@ function swapDataFromMiniature(event, player) {
 const lightbox = new SimpleLightbox(".gallery a", {
   /* options */
 });
+// !--------------------show more button--------------------------
+const gettingThere = document.querySelector(".getting-there__list--mobile");
+
+gettingThere.addEventListener("click", onShowMoreBtnClick);
+
+function onShowMoreBtnClick(event) {
+  if (event.target.nodeName !== "BUTTON") {
+    return;
+  }
+  const text = event.target.previousElementSibling;
+  text.classList.toggle("show-more");
+  if (event.target.innerText === "Show more") {
+    event.target.innerText = "Show less";
+  } else {
+    event.target.innerText = "Show more";
+  }
+}

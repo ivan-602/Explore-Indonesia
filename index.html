@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <section class="hero-section">
+      <section id="home" class="hero-section">
         <div class="container">
           <header class="page-header">
             <nav class="page-header__navigation">
@@ -879,39 +879,67 @@
         </div>
       </section>
       <footer class="footer">
-        <nav class="footer__navigation">
-          <a class="logo" href="./index.html"
-            ><span class="logo-colored">Explore</span><br />
-            Indonesia</a
-          >
-          <ul class="footer__nav-list">
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">About</a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">Pricing</a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">Company</a>
-            </li>
-            <li class="footer__nav-item">
-              <a href="#" class="footer__nav-link">Blog</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="footer__links">
-          <ul class="footer__links-list">
-            <li class="footer__links-item">
-              <a href="#" class="footer__links-link">fb</a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__links-link">tw</a>
-            </li>
-            <li class="footer__links-item">
-              <a href="#" class="footer__links-link">ig</a>
-            </li>
-          </ul>
-          <span class="footer-copyrihgt">Copyright © 2023</span>
+        <div class="footer-add-container">
+          <a href="#home" class="footer-home">
+            <svg class="footer-home__icon">
+              <use href="./img/icons.svg#icon-totopbtn"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="container">
+          <div class="footer__container">
+            <nav class="footer__navigation">
+              <a class="logo logo--footer" href="./index.html">
+                <svg class="logo-icon">
+                  <use href="./img/icons.svg#icon-logo"></use>
+                </svg>
+                <span class="logo-text logo-text--footer"
+                  ><span class="logo-colored logo-colored--footer">Explore</span
+                  >Indonesia</span
+                ></a
+              >
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">About</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Pricing</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Company</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#" class="footer__nav-link">Blog</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__links">
+              <ul class="footer__links-list">
+                <li class="footer__links-item">
+                  <a href="#" class="footer__links-link">
+                    <svg class="footer-icon">
+                      <use href="./img/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__links-item">
+                  <a href="#" class="footer__links-link">
+                    <svg class="footer-icon">
+                      <use href="./img/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__links-item">
+                  <a href="#" class="footer__links-link">
+                    <svg class="footer-icon">
+                      <use href="./img/icons.svg#icon-google"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <span class="footer-copyrihgt">Copyright © 2023</span>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
